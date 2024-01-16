@@ -20,7 +20,15 @@ function Topbar() {
                     </SignOutButton>
                 </SignedIn>
             </div>
-           <OrganizationSwitcher />
+           <OrganizationSwitcher 
+            appearance={{
+                elements: {
+                    OrganizationSwitcherTrigger: 
+                    "py-2 px-4"
+                }
+             }
+            }
+           />
         </div>
     </nav>
     )
