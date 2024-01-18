@@ -11,6 +11,7 @@ import { connectToDB } from "../mongoose";
 
 export async function fetchUser(userId: string) {
   try {
+    console.log(`Fetching user with ID: ${userId}`);
     connectToDB();
 
     return await User.findOne({ id: userId }).populate({
